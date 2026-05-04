@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  /* This kills the margin and sets the dark vibe globally */
+  body {
+    @apply m-0 p-0 bg-[#050505] overflow-x-hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+:root {
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 18px/145% var(--sans);
+  color-scheme: dark;
+  /* Forces browser UI like scrollbars to be dark */
+}
+
+/* REMOVED THE FIXED WIDTH FROM #ROOT */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Simplified Typography - Let Tailwind handle the rest in your components */
+h1,
+h2 {
+  font-weight: 500;
+  color: #f3f4f6;
+}
+
+p {
+  margin: 0;
+}

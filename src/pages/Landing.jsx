@@ -24,13 +24,19 @@ export default function Landing() {
               to="/products"
               className="hover:text-amber-400 transition-colors"
             >
-              Menu
+              View our Products
             </Link>
             <Link
               to="/about"
               className="hover:text-amber-400 transition-colors"
             >
-              Our Story
+              About Us
+            </Link>
+            <Link
+              to="/contact"
+              className="hover:text-amber-400 transition-colors"
+            >
+              Contact Us
             </Link>
           </nav>
 

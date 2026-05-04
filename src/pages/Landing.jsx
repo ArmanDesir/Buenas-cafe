@@ -145,6 +145,12 @@ export default function Landing() {
           <a href="#" className="hover:text-white transition-colors">
             Privacy
           </a>
+          <Link
+            to="/admin/login"
+            className="hover:text-white transition-colors"
+          >
+            Admin Login
+          </Link>
         </div>
       </footer>
     </div>

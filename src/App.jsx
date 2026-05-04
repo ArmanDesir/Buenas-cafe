@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 // Admin Pages
 import Dashboard from "./admin/Dashboard";
 import AddProduct from "./admin/AddProduct";
+import AdminLogin from "./admin/AdminLogin";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
 
         {/* Admin Side */}
+        <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/admin/add" element={<AddProduct />} />
         <Route path="/admin/edit/:id" element={<AddProduct />} />

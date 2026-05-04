@@ -1,3 +1,8 @@
+import { Link } from "react-router-dom";
 export default function Dashboard() {
-  return <h1> Dashboard page ☕</h1>;
+  return (
+    <Link to="/admin/add" className="bg-amber-500 ...">
+      Add New Bean
+    </Link>
+  );
 }

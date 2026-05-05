@@ -12,13 +12,19 @@ export default function NavBar() {
           <Link to="/" className="hover:text-amber-400 transition-colors">
             Home
           </Link>
-          <Link to="/products" className="hover:text-amber-400 transition-colors">
+          <Link
+            to="/products"
+            className="hover:text-amber-400 transition-colors"
+          >
             Products
           </Link>
           <Link to="/about" className="hover:text-amber-400 transition-colors">
             About
           </Link>
-          <Link to="/contact" className="hover:text-amber-400 transition-colors">
+          <Link
+            to="/contact"
+            className="hover:text-amber-400 transition-colors"
+          >
             Contact
           </Link>
         </nav>

@@ -13,9 +13,9 @@ export default function Landing() {
       </div>
 
       {/* HERO SECTION */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-24 pb-20 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div className="z-10">
+          <div className="z-10 flex flex-col justify-center">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-white/5 border border-white/10 rounded-full text-amber-500">
               Est. 2024 • Premium Roastery
             </span>
@@ -39,12 +39,12 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 bg-amber-500/10 blur-[100px] rounded-full"></div>
             <img
               src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1000&auto=format&fit=crop"
               alt="Coffee"
-              className="relative z-10 w-full aspect-[4/5] object-cover rounded-[2rem] grayscale-[0.2] contrast-[1.1] border border-white/10 shadow-2xl"
+              className="relative z-10 w-full max-w-[520px] aspect-[4/5] object-cover rounded-[2rem] grayscale-[0.2] contrast-[1.1] border border-white/10 shadow-2xl"
             />
           </div>
         </div>

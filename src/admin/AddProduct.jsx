@@ -9,7 +9,7 @@ export default function AddProduct() {
     name: "",
     price: "",
     desc: "",
-    images: [""], // Array to hold 1-5 image URLs
+    images: [""], // Array to hold 1-5 image data URIs from local uploads
   });
 
   useEffect(() => {
@@ -20,10 +20,16 @@ export default function AddProduct() {
     }
   }, [id]);
 
-  const handleImageChange = (index, value) => {
-    const newImages = [...formData.images];
-    newImages[index] = value;
-    setFormData({ ...formData, images: newImages });
+  const handleImageChange = (index, file) => {
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      const newImages = [...formData.images];
+      newImages[index] = reader.result;
+      setFormData({ ...formData, images: newImages });
+    };
+    reader.readAsDataURL(file);
   };
 
   const addImageField = () => {
@@ -100,22 +106,27 @@ export default function AddProduct() {
 
           <div className="space-y-4">
             <label className="text-xs font-bold uppercase tracking-widest text-amber-500">
-              Image URLs (Max 5)
+              Upload Images (Max 5)
             </label>
-            {formData.images.map((url, index) => (
-              <input
-                key={index}
-                required={index === 0}
-                type="text"
-                placeholder={
-                  index === 0
-                    ? "Main Image URL (Required)"
-                    : `Gallery Image ${index + 1}`
-                }
-                className="w-full bg-black/50 border border-white/10 p-3 rounded-xl text-sm focus:border-amber-500 outline-none"
-                value={url}
-                onChange={(e) => handleImageChange(index, e.target.value)}
-              />
+            {formData.images.map((image, index) => (
+              <div key={index} className="space-y-2">
+                <input
+                  required={index === 0}
+                  type="file"
+                  accept="image/*"
+                  className="w-full bg-black/50 border border-white/10 p-3 rounded-xl text-sm focus:border-amber-500 outline-none"
+                  onChange={(e) =>
+                    handleImageChange(index, e.target.files?.[0])
+                  }
+                />
+                {image && (
+                  <img
+                    src={image}
+                    alt={`Preview ${index + 1}`}
+                    className="h-24 w-full object-cover rounded-xl border border-white/10"
+                  />
+                )}
+              </div>
             ))}
             {formData.images.length < 5 && (
               <button

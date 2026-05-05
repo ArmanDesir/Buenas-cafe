@@ -27,10 +27,10 @@ export default function Products() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/5 mb-6">
                 <img
                   src={
-                    item.images[0] ||
+                    item.images?.[0] ||
                     "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1000"
                   }
-                  alt={item.name}
+                  alt={item.name || "Product image"}
                   className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />

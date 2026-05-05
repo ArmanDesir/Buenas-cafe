@@ -10,7 +10,7 @@ export default function Products() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050505] pt-32 px-6 pb-20">
+    <div className="min-h-screen bg-[#050505] pt-0 px-6 pb-20">
       <NavBar />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">

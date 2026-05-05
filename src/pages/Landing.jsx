@@ -17,7 +17,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div className="z-10 flex flex-col justify-center">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-white/5 border border-white/10 rounded-full text-amber-500">
-              Est. 2024 • Premium Roastery
+              Est. 2026 • Premium Roastery
             </span>
             <h2 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
               WAKE UP <br />

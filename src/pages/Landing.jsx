@@ -1,53 +1,16 @@
 import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 export default function Landing() {
   return (
     <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black">
+      <NavBar />
+
       {/* GLOW EFFECT BEYOND THE CONTENT */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-amber-900/20 blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-orange-900/10 blur-[120px]" />
       </div>
-
-      {/* NAVBAR */}
-      <header className="sticky top-0 z-50 backdrop-blur-md border-b border-white/5 bg-black/20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-2xl tracking-tighter font-black italic">
-            BUENAS<span className="text-amber-500">CAFÉ</span>
-          </h1>
-
-          <nav className="hidden md:flex items-center gap-10 text-[13px] font-medium uppercase tracking-widest text-white/50">
-            <Link to="/" className="hover:text-amber-400 transition-colors">
-              Home
-            </Link>
-            <Link
-              to="/products"
-              className="hover:text-amber-400 transition-colors"
-            >
-              View our Products
-            </Link>
-            <Link
-              to="/about"
-              className="hover:text-amber-400 transition-colors"
-            >
-              About Us
-            </Link>
-            <Link
-              to="/contact"
-              className="hover:text-amber-400 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </nav>
-
-          <button className="group relative px-6 py-2 overflow-hidden rounded-full bg-amber-500 font-bold text-black transition-all hover:pr-10">
-            <span className="relative z-10">Order Now</span>
-            <span className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all text-xl">
-              →
-            </span>
-          </button>
-        </div>
-      </header>
 
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-20 px-6 overflow-hidden">

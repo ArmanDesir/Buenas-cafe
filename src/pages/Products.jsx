@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import NavBar from "../components/NavBar";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -10,6 +11,7 @@ export default function Products() {
 
   return (
     <div className="min-h-screen bg-[#050505] pt-32 px-6 pb-20">
+      <NavBar />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-6xl font-black tracking-tighter uppercase mb-4">

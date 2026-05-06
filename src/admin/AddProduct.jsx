@@ -9,6 +9,7 @@ export default function AddProduct() {
     name: "",
     price: "",
     desc: "",
+    category: "",
     images: [""], // Array to hold 1-5 image data URIs from local uploads
   });
 
@@ -102,6 +103,24 @@ export default function AddProduct() {
                 setFormData({ ...formData, desc: e.target.value })
               }
             />
+            <select
+              required
+              className="w-full bg-black/50 border border-white/10 p-4 rounded-xl focus:border-amber-500 outline-none transition-colors"
+              value={formData.category}
+              onChange={(e) =>
+                setFormData({ ...formData, category: e.target.value })
+              }
+            >
+              <option value="">Select Category</option>
+              <optgroup label="Drinks">
+                <option value="coffee">Coffee</option>
+                <option value="non-coffee">Non-Coffee</option>
+                <option value="soda">Soda</option>
+                <option value="matcha series">Matcha Series</option>
+              </optgroup>
+              <option value="street foods">Street Foods</option>
+              <option value="snack corner">Snack Corner</option>
+            </select>
           </div>
 
           <div className="space-y-4">

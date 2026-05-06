@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black">
+    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black px-6 pb-20">
       <NavBar />
 
       {/* GLOW EFFECT BEYOND THE CONTENT */}
@@ -13,8 +13,8 @@ export default function Landing() {
       </div>
 
       {/* HERO SECTION */}
-      <section className="relative pt-24 pb-20 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative pb-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 pt-20 grid lg:grid-cols-2 gap-16 items-center">
           <div className="z-10 flex flex-col justify-center">
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-white/5 border border-white/10 rounded-full text-amber-500">
               Est. 2026 • Premium Roastery
@@ -44,7 +44,7 @@ export default function Landing() {
             <img
               src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1000&auto=format&fit=crop"
               alt="Coffee"
-              className="relative z-10 w-full max-w-[520px] aspect-[4/5] object-cover rounded-[2rem] grayscale-[0.2] contrast-[1.1] border border-white/10 shadow-2xl"
+              className="relative z-10 w-full max-w-[460px] aspect-[4/5] object-cover rounded-[2rem] grayscale-[0.2] contrast-[1.1] border border-white/10 shadow-2xl"
             />
           </div>
         </div>

@@ -29,11 +29,11 @@ export default function Products() {
   );
 
   return (
-    <div className="min-h-screen bg-[#050505] pt-0 px-6 pb-20">
+    <div className="min-h-screen bg-[#050505] px-6 pb-20">
       <NavBar />
-      <div className="max-w-7xl mx-auto">
+      <main className="max-w-7xl mx-auto pt-24">
         <div className="text-center mb-10">
-          <h2 className="text-4xl mt-10 font-black tracking-tighter uppercase mb-4">
+          <h2 className="text-4xl font-bold tracking-tighter uppercase mb-4">
             Our <span className="text-amber-500">Menu</span>
           </h2>
           <p className="text-white/30 tracking-widest uppercase text-xs">
@@ -148,7 +148,7 @@ export default function Products() {
                     className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
-                  <span className="absolute bottom-6 right-6 px-4 py-1 bg-amber-500 text-black font-black rounded-full text-sm">
+                  <span className="absolute bottom-6 right-6 px-4 py-1 bg-amber-500 text-black font-bold rounded-full text-sm">
                     ₱{item.price}
                   </span>
 
@@ -185,7 +185,7 @@ export default function Products() {
                   )}
                 </div>
 
-                <h4 className="text-xl font-bold mb-2 group-hover:text-amber-500 transition-colors">
+                <h4 className="text-xl font-semibold mb-2 group-hover:text-amber-500 transition-colors">
                   {item.name}
                 </h4>
                 <p className="text-white/40 text-sm leading-relaxed line-clamp-2">
@@ -210,7 +210,7 @@ export default function Products() {
             );
           })}
         </div>
-      </div>
+      </main>
     </div>
   );
 }

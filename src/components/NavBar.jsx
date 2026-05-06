@@ -31,7 +31,7 @@ export default function NavBar() {
 
         <Link
           to="/products"
-          className="group relative px-6 py-2 overflow-hidden rounded-full bg-amber-500 font-bold text-black transition-all hover:pr-10"
+          className="group relative px-6 py-2 overflow-hidden rounded-full bg-amber-500 text-black transition-all hover:pr-10"
         >
           <span className="relative z-10">Order Now</span>
           <span className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all text-xl">

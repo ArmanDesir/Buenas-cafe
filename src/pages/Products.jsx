@@ -25,11 +25,12 @@ export default function Products() {
     activeSection;
 
   const activeProducts = products.filter(
-    (product) => product.category === activeSection,
+    (product) =>
+      product.category?.toLowerCase() === activeSection.toLowerCase(),
   );
 
   return (
-    <div className="min-h-screen bg-[#050505] px-6 pb-20">
+    <div className="min-h-screen bg-[#050505] pb-20">
       <NavBar />
       <main className="max-w-7xl mx-auto pt-24">
         <div className="text-center mb-10">

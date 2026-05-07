@@ -5,7 +5,7 @@ export default function NavBar() {
     <header className="sticky top-0 z-50 backdrop-blur-md border-b border-white/5 bg-black/20">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="text-2xl tracking-tighter font-black italic">
-          BUENAS<span className="text-amber-500">CAFÉ</span>
+          BUENAS <span className="text-amber-500">CAFÉ</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10 text-[13px] font-medium uppercase tracking-widest text-white/50">

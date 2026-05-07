@@ -3,11 +3,11 @@ import NavBar from "../components/NavBar";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black pb-20">
+    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black pb-20 overflow-x-hidden">
       <NavBar />
 
       {/* GLOW EFFECT BEYOND THE CONTENT */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-amber-900/20 blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-orange-900/10 blur-[120px]" />
       </div>

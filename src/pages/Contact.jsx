@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-[#050505] text-white px-6 pb-20">
+    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black pb-20">
       <NavBar />
       <main className="max-w-7xl mx-auto pt-20">
         <h1 className="text-4xl font-bold mb-6">Contact Us</h1>

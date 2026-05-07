@@ -9,10 +9,23 @@
   /* This kills the margin and sets the dark vibe globally */
   body {
     @apply m-0 p-0 bg-[#050505] overflow-x-hidden;
+    overflow-y: scroll;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari */
 }
 
 :root {

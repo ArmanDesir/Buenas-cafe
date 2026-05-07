@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black px-6 pb-20">
+    <div className="min-h-screen bg-[#050505] pb-20">
       <NavBar />
 
       {/* GLOW EFFECT BEYOND THE CONTENT */}
@@ -19,7 +19,7 @@ export default function Landing() {
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-white/5 border border-white/10 rounded-full text-amber-500">
               Est. 2026 • Premium Roastery
             </span>
-            <h2 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
+            <h2 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8 text-slate-50">
               WAKE UP <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-amber-200 to-amber-600">
                 YOUR SOUL.
@@ -33,7 +33,7 @@ export default function Landing() {
               <button className="px-10 py-4 bg-white text-black font-black rounded-xl hover:bg-amber-400 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)]">
                 VIEW COLLECTIONS
               </button>
-              <button className="px-10 py-4 border border-white/10 font-bold rounded-xl hover:bg-white/5 transition-all">
+              <button className="px-10 py-4 border border-white/10 font-bold rounded-xl hover:bg-white/5 transition-all text-slate-50">
                 OUR PROCESS
               </button>
             </div>
@@ -57,7 +57,9 @@ export default function Landing() {
             <div className="w-12 h-12 mb-6 bg-amber-500/20 rounded-lg flex items-center justify-center text-amber-500 text-2xl group-hover:scale-110 transition-transform">
               ☕
             </div>
-            <h3 className="text-3xl font-bold mb-4">Ethically Sourced</h3>
+            <h3 className="text-3xl font-bold mb-4 text-slate-50">
+              Ethically Sourced
+            </h3>
             <p className="text-white/40 max-w-sm">
               Direct trade relationships ensuring the highest quality and fair
               pay for our farmers.
@@ -75,7 +77,9 @@ export default function Landing() {
           </div>
 
           <div className="p-10 bg-white/[0.02] border border-white/5 rounded-[2.5rem] md:col-span-1 group hover:bg-white/[0.04] transition-all">
-            <h3 className="text-xl font-bold mb-2">Artisan Vibe</h3>
+            <h3 className="text-xl font-bold mb-2 text-slate-50">
+              Artisan Vibe
+            </h3>
             <p className="text-white/40">
               Custom interiors designed for your creative flow.
             </p>
@@ -83,7 +87,9 @@ export default function Landing() {
 
           <div className="md:col-span-2 p-10 bg-gradient-to-br from-zinc-900 to-black border border-white/5 rounded-[2.5rem] flex items-center justify-between group overflow-hidden">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Join the Club</h3>
+              <h3 className="text-2xl font-bold mb-2 text-slate-50">
+                Join the Club
+              </h3>
               <p className="text-white/40">
                 Subscribers get 20% off every order.
               </p>

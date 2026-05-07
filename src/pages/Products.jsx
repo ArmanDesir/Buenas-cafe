@@ -30,7 +30,7 @@ export default function Products() {
   );
 
   return (
-    <div className="min-h-screen bg-[#050505] pb-20">
+    <div className="min-h-screen bg-[#050505] text-slate-50 font-sans selection:bg-amber-400 selection:text-black pb-20">
       <NavBar />
       <main className="max-w-7xl mx-auto pt-24">
         <div className="text-center mb-10">
